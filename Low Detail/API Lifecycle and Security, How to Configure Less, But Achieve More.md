@@ -2,7 +2,7 @@
 
 NGINX, an import piece of infrastructure. It is like a lego build, it can do multiple use cases. It can be a web server, a load balancer, an API Gateway. In fact, most API Gateways are built on NGINX.
 
-DevOps need to tackle compexibilty, visibility and threats.
+DevOps need to tackle complexity, visibility and threats.
 
 The NGINX API Connectivity Manager needs to serve the developers, and the operators. A lot of decentralisation of developers has happened, which adds a lot of complexity for the operators. 
 

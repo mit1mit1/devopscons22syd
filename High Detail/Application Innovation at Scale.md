@@ -2,9 +2,9 @@
 
 I have a podcast - "A Spanner in the Works". You can also follow me on linkedin if you want. I'm German, not funny, and not smart.
 
-DevOps is a verb. Enterprises have tried to apply the coodness of devops but it hasn't occured the way they wanted.
+DevOps is a verb. Enterprises have tried to apply the goodness of devops but it hasn't occurred the way they wanted.
 
-'You need to be this tall to do microservices'. To do microservices well, you need self-service, on demand infrastruction, but also you need to re-organise to a devops organisation.
+"You need to be this tall to do microservices". To do microservices well, you need self-service, on demand infrastructure, but also you need to re-organise to a devops organisation.
 
 Then you need some tools and such.
 
@@ -24,7 +24,7 @@ There's a cool slide here outlining which multi-cloud model works best on differ
 
 Flow and flow metrics:
 
-- Flow optimisation over resource utilisation.
+- Flow optimisation over resource use.
 - Avoid time thieves.
   - Too much WIP
   - Unknown dependencies
@@ -37,9 +37,9 @@ Flow and flow metrics:
 
 - X-as-a-service
 - Collaboration
-- Facillitating
+- Facilitating
 
-Inverse conway maneuver
+Inverse conway manoeuvre
 
 - Team structures affects architecture.
 - Have long lived teams to make them actually form well.
@@ -50,9 +50,9 @@ Red hat helps with this stuff too - they can come in, and help analyse and impro
 
 Culture is to a group as a personality is to an individual.
 
-It is expressed and witnessed in behavior - you can't have an "open door culture" if the bosses are always in their rooms with the doors closed.
+It is expressed and witnessed in behaviour - you can't have an "open door culture" if the bosses are always in their rooms with the doors closed.
 
-Ron Westrum's PHD was around this. Culture affects information flow (and co-orperation, and novelty of ideas). These things are good and important.
+Ron Westrum's PHD was around this. Culture affects information flow (and co-operation, and novelty of ideas). These things are good and important.
 
 Red Hat does a culture assessment too.
 

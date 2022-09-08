@@ -16,15 +16,15 @@ Hashicorp is popular because they try to unify a workflow that works for anythin
 
 Companies use Hashicorp tools as an abstraction layer between infrastructure and it's users.
 
-## What is Wayoint?
+## What is Waypoint?
 
 It provides a consistent developer experience, and a consistent operator experience, when managing the stack.
 
 It is a higher level of abstraction then the other three tools.
 
-It abstracts the stack into a single workflow, whether the underlying foundatino is a HashiCorp tool stack, or any other patchwork of technologies.
+It abstracts the stack into a single workflow, whether the underlying foundation is a HashiCorp tool stack, or any other patchwork of technologies.
 
-Waypoint has 3 steps: Build (turn application souce into an artifact), Deploy, Release.
+Waypoint has 3 steps: Build (turn application source into an artifact), Deploy, Release.
 
 You can use waypoint:
 - From the CLI;
