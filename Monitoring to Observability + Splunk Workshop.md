@@ -118,4 +118,3 @@ If people want to look into it from our company, options are:
 1. Engineers can make a trial account.
 2. If features are unavailable or you want to expand the trial talk to the people who ran the workshop (who are their technical customer facing team).
 
-First, we need to better understand where our gaps are. We need to compare to Datadog RUM as well.
