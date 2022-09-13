@@ -1,15 +1,40 @@
-# Detailed Talk Notes from DevOps Talks Conference, Sydney, Australia, 2022
+# devopscon22syd
 
-These are Mitch's fairly detailed talk notes. You're welcome to read them, or add to them.
+This template should help get you started developing with Vue 3 in Vite.
 
-These detailed notes have two purposes:
+## Recommended IDE Setup
 
-1. I'm using them to create actually useful summaries for general consumption (potentially in comic form).
-2. We can be referred back to them (and use CTRL+F on them) we want to jog our memory of a particular moment at the conference.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-Slides are available at https://devops.talksplus.com/2022_Sydney/agenda.html, which should be complementary.
+## Type Support for `.vue` Imports in TS
 
-Please note that these notes are only my attempt to represent the views of the speakers. Hence:
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-1. I will have gotten things wrong and misinterpreted things on occasion; in the case that the notes say incorrect things, the speakers should be given the benefit of the doubt;
-2. Credit for the meaningful content of these notes goes to the speakers, not to me.
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
