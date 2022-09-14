@@ -7,6 +7,7 @@ import ComicTitle from '../vue-comic-components/components/ComicTitle.vue';
 import NavigationBar from '../vue-comic-components/components/NavigationBar.vue';
 import { availableLimbPositions } from "../vue-comic-components/constants/limbPositions";
 import { toRefs } from "vue";
+import PackageFigure from "../vue-comic-components/svgs/PackageFigure.vue";
 const props = defineProps<{
   comicList: Array<string>;
 }>();
@@ -59,14 +60,35 @@ const speakerBeanieColor = {
       <text x="170" y="420">IN THE DUST.</text>
     </PanelBox>
     <PanelBox>
-      <text x="60" y="100">WHAT IF WE STICK TO JUST A </text>
-      <text x="60" y="140">FEW OPEN SOURCE PACKAGES </text>
-      <text x="60" y="180">AND CHECK THEM CAREFULLY?</text>
-      <text x="60" y="220">PROBLEM: PACKAGES USE</text>
-      <text x="60" y="260">PACKAGES USE PACKAGES.</text>
-      <text x="60" y="300">EVEN A COUPLE OF PACKAGES</text>
-      <text x="60" y="340">ENDS UP TOO BIG TO CHECK.</text>
-      <text x="60" y="400">(Package mitosis svgs)</text>
+      <text x="60" y="90">WHAT IF WE STICK TO JUST A </text>
+      <text x="60" y="130">FEW OPEN SOURCE PACKAGES </text>
+      <text x="60" y="170">AND CHECK THEM CAREFULLY?</text>
+      <text x="60" y="210">PROBLEM: PACKAGES USE</text>
+      <text x="60" y="250">PACKAGES, WHICH USE</text>
+      <text x="60" y="290">PACKAGES. TWO PACKAGES</text>
+      <text x="60" y="330">TURNS INTO TOO MANY.</text>
+
+      <g transform="translate(30, 340)">
+        <PackageFigure :minimumX="60" :minimumY="400" />
+      </g>
+      <g transform="scale(0.5 0.5) translate(430, 680)">
+        <PackageFigure />
+      </g>
+      <g transform="scale(0.5 0.5) translate(430, 840)">
+        <PackageFigure />
+      </g>
+      <g transform="scale(0.25 0.25) translate(1430, 1390)">
+        <PackageFigure />
+      </g>
+      <g transform="scale(0.25 0.25) translate(1430, 1540)">
+        <PackageFigure />
+      </g>
+      <g transform="scale(0.25 0.25) translate(1430, 1680)">
+        <PackageFigure />
+      </g>
+      <g transform="scale(0.25 0.25) translate(1430, 1840)">
+        <PackageFigure />
+      </g>
     </PanelBox>
     <PanelBox>
       <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
@@ -105,78 +127,90 @@ const speakerBeanieColor = {
       <text x="100" y="340">GIT REPO TO LOOK BETTER.</text>
     </PanelBox>
     <PanelBox>
-      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-        :limbPositions="availableLimbPositions.handsFolded" beanieBaseColor="#ade" beanieStripeColor="#dea" />
-      <text x="60" y="100">SO WE HAVE THESE THINGS</text>
-      <text x="60" y="140">THAT MAKE OS FEEEEL TRUSTWORTHY,</text>
-      <text x="60" y="180">BUT IT CAN GO BAD.</text>
-      <text x="60" y="220">FOR EXAMPLE:</text>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360" beanieBaseColor="#ade"
+        beanieStripeColor="#dea" />
+      <text x="170" y="100">SO WE HAVE THESE 3</text>
+      <text x="170" y="140">THINGS THAT MAKE</text>
+      <text x="170" y="180">OPEN SOURCE FEEL</text>
+      <text x="170" y="220">TRUSTWORTHY, BUT</text>
+      <text x="170" y="260">THERE ARE WAYS IT</text>
+      <text x="170" y="300">CAN GO WRONG.</text>
+      <text x="170" y="360">FOR EXAMPLE:</text>
     </PanelBox>
     <PanelBox>
-      <text>
-        <!-- AMERICAN GOV HAVE PUT OUT AN EXECUTIVE ORDER TO GET EM FIXED.
-  
-        SUPPLY CHAIN LEVELS FOR SOFTWARE ARCHITECTS ARE SOME BIG PLAYERS COMING TOGETHER TO TRY AND REGULATE THE SOURCE
-        THREATS, BUILD THREATS AND DEPENDENCY THREATS IN THE SUPPLY CHAIN. -->
-        <!-- MONTHLY PACKAGE RELEASES IS INCREASING ON A BUNCH OF PLATFORMS (EXCEPT RUBY :( ). -->
-
-        THIS CONTRIBUTES TO TRUSTWORTHY FEELING, BUT IT CAN GO BAD.
-
-        E.G.:
-
-        UA-PARSER-JS - ACTIVELY MAINTAINED FOR 10 YEARS, MILLIONS OF REGULAR DOWNLOADS, MOST LIKELY YOU'RE ALREADY USING
-        IT (FACEBOOK IS).
-
-        IT DIDN'T HAVE 2FA ON THE ACCOUNT, A RUSSIAN HACKING GROUP GOT IT, PUBLISHED TO CREDENTIALS, AND THEY INSTALLED
-        CRYPTO MINERS ON MANY MANY DEVICES.
-
-
-        E.G. 2 WEEKS LATER:
-
-        COA AND RC, 22 MILLION WEEKLY DOWNLOADS. WE DON'T KNOW HOW, BUT SOMEHOW THE SAME MALICIOUS CODE GOT PUT INTO
-        BOTH OF THEM.
-
-
-        YOU CAN ENSURE YOUR DEVS HAVE 2FA, BUT YOU CAN'T ENSURE THE HOBBY DEVELOPER WHO MAKES SOME LITTLE LIBRARY THAT'S
-        PART OF REACT DOES TOO.
-
-
-        E.G. 3:
-
-        RIAEVANGELIST, ANOTHER SUPER POPULAR LIBRARY, THE AUTHOR PUT SOME VERY OBFUSICATED CODE INTO THE LIBRARY. IT
-        TURNS OUT THAT IT CHECKS YOUR IP, AND IF YOU'RE FROM RUSSIA OR BELARUSE, IT DELETES - EVERYTHING.
-
-        THE AUTHOR WAS ASKED ABOUT IT, HE SAID "IT'S MY CODE, YOU'RE RUNNING IT, I CAN DO WHAT I WANT WITH IT".
-
-        HE DID THIS TO ONE OF HIS PROJECTS, HE HAS 40 OTHERS, WHAT IF HE DECIDES HE JUST DOESN'T LIKE BIG BANKS?
-
-
-        E.G. REDLILI:
-
-        THESE GUYS ARE A SUPPLY CHAIN ATTACK THREAT. THEY CREATE MALICIOUS PACKAGES FROM ALL DIFFERENT ACCOUNTS, ON
-        DISPOSABLE DOMAINS - SO THEY CAN'T BE CAUGHT.
-
-
-        ALIGN SECURITY AND OPERATIONS:
-
-        - FRAME THE CONVERSATION ABOUT OPEN-SOURCE USAGE WITH DEV AND MANAGEMENT
-        - UNDERSTAND YOUR OPEN SOURCE RISK PROFILE.
-
-        (CHECKMARX ADVERTISING SPHEAL - SEEMS A SIMILAR TOOL TO SNYK, SCANS AND ALERTS YOU TO VULNERABILITIES IN
-        PACKAGES AND SUBPACKAGES, GIVES YOU ATTACK VECTORS).
-
-
-        VULNERABLE != MALICIOUS.
-
-        - IT'S OKAY TO RUN VULNERABLE CODE, AS LONG AS IT IS MANAGED AND TRIAGED.
-        - IT'S NOT OKAY TO RUN MALICIOUS.
-
-
-        CHECKMARX DOES (SEE SLIDES). CLAIMS TO DO MORE THAN CURRENT MARKET OFFERINGS. ALSO CLAIMS TO KEEP THE OPEN
-        SOURCE LIBRARIES UP TO DATE ON FOUND VULNERABILITIES, WHICH SEEMS COOL..
-      </text>
+      <text x="60" y="100">UA-PARSER-JS: A POPULAR</text>
+      <text x="60" y="140">NPM PACKAGE ACTIVELY</text>
+      <text x="60" y="180">MAINTAINED FOR 10 YEARS,</text>
+      <text x="60" y="220">WITH MILLIONS OF WEEKLY</text>
+      <text x="60" y="260">DOWNLOADS. THE OWNER</text>
+      <text x="60" y="300">DIDN'T HAVE 2FA ON, AND A</text>
+      <text x="60" y="340">HACKING GROUP GOT IN AND</text>
+      <text x="60" y="380">ADDED A CRYPTO MINER TO IT.</text>
+      <text x="60" y="420">HUNDREDS OF THOUSANDS OF</text>
+      <text x="60" y="460">DEVICES WERE COMPROMISED.</text>
     </PanelBox>
-
+    <PanelBox>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+        :limbPositions="availableLimbPositions.handsFolded" beanieBaseColor="#ade" beanieStripeColor="#dea" />
+      <text x="170" y="100">YOU CAN MAKE YOUR</text>
+      <text x="170" y="140">DEVELOPERS USE 2FA.</text>
+      <text x="170" y="180">YOU CAN'T MAKE SOME</text>
+      <text x="170" y="220">HOBBY PROGRAMMER</text>
+      <text x="170" y="260">WHO'S CODE RUNS ON</text>
+      <text x="170" y="300">EVERY REACT INSTANCE</text>
+      <text x="170" y="340">USE IT.</text>
+    </PanelBox>
+    <PanelBox>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360" beanieBaseColor="#ade"
+        :limbPositions="availableLimbPositions.shrug" beanieStripeColor="#dea" />
+      <text x="170" y="100">SO WHAT CAN YOU DO?</text>
+      <text x="170" y="140">FIRST, BE AWARE.</text>
+      <text x="170" y="200">DEVS, OPS, AND</text>
+      <text x="170" y="240">MANAGEMENT ALL NEED</text>
+      <text x="170" y="280">TO PRIORITISE SAFETY</text>
+      <text x="170" y="320">FROM DEPENDENCY</text>
+      <text x="170" y="360">THREATS FROM THE</text>
+      <text x="170" y="400">START OF A PROJECT.</text>
+    </PanelBox>
+    <PanelBox>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360" beanieBaseColor="#ade"
+        beanieStripeColor="#dea" />
+      <text x="170" y="100">NEXT, YOU'LL ACTUALLY</text>
+      <text x="170" y="140">NEED A WAY TO CHECK</text>
+      <text x="170" y="180">FOR VULNERABILITIES.</text>
+      <text x="170" y="220">REALISTICALLY, YOU'LL</text>
+      <text x="170" y="260">NEED AN AUTOMATED</text>
+      <text x="170" y="300">TOOL.</text>
+      <text x="170" y="360">CHECKMARX IS ONE</text>
+      <text x="170" y="400">GOOD OPTION.</text>
+    </PanelBox>
+    <PanelBox>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+        :limbPositions="availableLimbPositions.rightHandPointingSouthEast" beanieBaseColor="#ade"
+        beanieStripeColor="#dea" />
+      <text x="135" y="100">CHECKMARX INTEGRATES</text>
+      <text x="170" y="140">SOURCE CODE, BUILD</text>
+      <text x="170" y="180">AND DEPENDENCY</text>
+      <text x="170" y="220">THREAT MITIGATION</text>
+      <text x="170" y="260">INTO ONE UNIFIED</text>
+      <text x="170" y="300">PLATFORM. THERE'S</text>
+      <text x="170" y="340">MORE ABOUT IT AT</text>
+      <text x="200" y="380"><a href="https://checkmarx.com/">checkmarx.com</a></text>
+    </PanelBox>
+    <PanelBox>
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360" beanieBaseColor="#ade"
+        beanieStripeColor="#dea" />
+      <text x="170" y="100">FINALLY, REMEMBER:</text>
+      <text x="170" y="140">VULNERABLE DOES'T</text>
+      <text x="170" y="180">EQUAL MALICIOUS.</text>
+      <text x="170" y="220">VULNERABLE CODE</text>
+      <text x="170" y="260">THAT IS MANAGED IS</text>
+      <text x="170" y="300">OKAY. MALICIOUS CODE</text>
+      <text x="170" y="340">IS NEVER OKAY. MAKE</text>
+      <text x="170" y="380">SURE YOU'RE AWARE</text>
+      <text x="170" y="420">OF AND ARE LOOKING</text>
+      <text x="170" y="460">OUT FOR BOTH.</text>
+    </PanelBox>
   </ComicBox>
   <NavigationBar :comicList="comicList" />
   <AfterComicBox>
