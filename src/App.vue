@@ -2,7 +2,8 @@
 import IntroComic from './comics/IntroComic.vue';
 import SupplyChainVulnerabilities from './comics/SupplyChainVulnerabilities.vue';
 import { getComicNumber } from './vue-comic-components/utils/comicNumber';
-const comicList = ['intro', 'supply_chain_vulnerabilities',]
+import DoraReport from './comics/DoraReport.vue';
+const comicList = ['intro', 'supply_chain_vulnerabilities', 'dora_report']
 const comicNumber = getComicNumber(comicList);
 </script>
   
@@ -12,6 +13,8 @@ const comicNumber = getComicNumber(comicList);
     <IntroComic v-if="comicNumber == comicList.indexOf('intro')" :comicList="comicList" />
     <SupplyChainVulnerabilities :comicList="comicList"
       v-else-if="comicNumber == comicList.indexOf('supply_chain_vulnerabilities')" />
+    <DoraReport :comicList="comicList"
+      v-else-if="comicNumber == comicList.indexOf('dora_report')" />
     <div v-else>Sorry, no comic at this address.</div>
   </main>
 </template>
