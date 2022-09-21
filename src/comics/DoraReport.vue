@@ -32,9 +32,10 @@ const speakerBeanieColor = {
 
             <text x="180" y="240">WE'VE HAD SOME COOL</text>
             <text x="180" y="280">STATISTICAL ANALYSIS</text>
-            <text x="180" y="320">DONE FOR US, LET'S</text>
-            <text x="180" y="360">JUMP INTO THE</text>
-            <text x="180" y="400">FINDINGS.</text>
+            <text x="180" y="320">DONE FOR US IN THE</text>
+            <text x="180" y="360">2021 <a href="https://cloud.google.com/devops/state-of-devops">DORA REPORT</a>.</text>
+            <text x="180" y="410"> LET'S JUMP INTO THE</text>
+            <text x="180" y="450">FINDINGS.</text>
         </PanelBox>
         <PanelBox>
             <text x="50" y="80">THE DORA PROGRAM DOES</text>
@@ -69,7 +70,7 @@ const speakerBeanieColor = {
             <text x="180" y="130">FEATURES AND FIXES,</text>
             <text x="180" y="170">FEWER BUGS AND</text>
             <text x="180" y="210">LESS DOWNTIME.</text>
-    
+
             <text x="180" y="260">THE 5 METRICS</text>
             <text x="180" y="300">QUANTIFY THESE SO</text>
             <text x="180" y="340">WE CAN STUDY THEM.</text>
@@ -79,17 +80,191 @@ const speakerBeanieColor = {
             <text x="180" y="470">THESE METRICS.</text>
         </PanelBox>
         <PanelBox>
+            <text x="140" y="120">CLOUD COMPUTING</text>
+            <text x="188" y="160">PRACTICES</text>
+        </PanelBox>
+        <PanelBox>
             <text x="50" y="80">- CLOUD COMPUTING PRACTICES</text>
-            
-            <text x="50" y="130">EVERYONE BUT ONLY SOME</text>
-            <text x="50" y="170">WE'RE PREDICTING 5 METRICS:</text>
 
-            <text x="50" y="240">1. DEPLOYMENT FREQUENCY</text>
-            <text x="50" y="280">2. LEAD TIME TO CHANGES</text>
-            <text x="50" y="320">3. TIME TO RESTORE SERVICE</text>
-            <text x="50" y="360">4. CHANGE FAILURE RATE</text>
-            <text x="50" y="400">5. RELIABILITY OF SOFTWARE</text>
-            <text x="170" y="280"></text>
+            <text x="50" y="130">DORA FOUND THAT CLOUD</text>
+            <text x="50" y="170">ADOPTION IS RISING - NICE.</text>
+
+            <text x="50" y="220">BUT MORE IMPORTANT IS IF</text>
+            <text x="50" y="260">CLOUD IS IMPLEMENTED WELL.</text>
+            <text x="50" y="300">ONLY 1/3 OF CLOUD USERS MET</text>
+            <text x="50" y="340">ALL 5 NIST CLOUD STANDARDS.</text>
+
+            <text x="50" y="400">THE ONES THAT DID MEET THE</text>
+            <text x="50" y="440">STANDARDS WERE 3x MORE</text>
+            <text x="50" y="480">LIKELY TO SMASH THE METRICS.</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">THE FIVE STANDARDS ARE:</text>
+            <text x="50" y="130">1. AUTOMATICALLY PROVISIONED</text>
+            <text x="80" y="170">RESOURCES</text>
+            <text x="50" y="210">2. WORLDWIDE ACCESS ON ANY</text>
+            <text x="80" y="250">DEVICE TYPE</text>
+            <text x="50" y="290">3. MULTI-TENANCY POOLING</text>
+            <text x="80" y="330">OF RESOURCES</text>
+            <text x="50" y="370">4. RAPID SCALING OF</text>
+            <text x="80" y="410">CAPABILITIES</text>
+            <text x="50" y="450">5. MEASURE AND OPTIMISE</text>
+            <text x="80" y="490">SERVICE</text>
+
+        </PanelBox>
+        <PanelBox>
+            <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+                :limbPositions="availableLimbPositions.handsFolded" :beanieBaseColor="speakerBeanieColor.baseColor"
+                :beanieStripeColor="speakerBeanieColor.stripeColor" />
+
+            <text x="180" y="90">THAT'S A VERY, VERY</text>
+            <text x="180" y="130">BRIEF VERSION OF THE</text>
+            <text x="180" y="170">CLOUD STANDARDS.</text>
+            <text x="180" y="230">FOR A PROPER</text>
+            <text x="180" y="270">EXPLANATION, PLUS</text>
+            <text x="180" y="310">PITFALLS AND</text>
+            <text x="180" y="350">SUGGESTIONS, SEE</text>
+            <text x="180" y="390">
+                <a href="https://cloud.google.com/architecture/devops/devops-tech-cloud-infrastructure">GOOGLE'S
+                    ARTICLE</a></text>
+        </PanelBox>
+        <PanelBox>
+            <text x="140" y="120">SRE PERFORMANCE</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">THESE SRE METRICS GAVE</text>
+            <text x="50" y="120">1.8x PERFORMANCE:</text>
+
+            <text x="50" y="170">1. DEFINE RELIABILITY AS</text>
+            <text x="80" y="210">USER-FACING BEHAVIOR</text>
+            <text x="50" y="250">2. PRIORITISE WORK WITH</text>
+            <text x="80" y="290">SLIs/SLOs + ERROR BUDGETS</text>
+            <text x="50" y="330">3. AUTOMATE <a href="https://sre.google/sre-book/eliminating-toil/">TOIL</a></text>
+            <text x="50" y="370">4. DEFINE PROTOCOLS+DRILLS</text>
+            <text x="80" y="410">FOR INCIDENT RESPONSE.</text>
+            <text x="50" y="450">5. SHIFT LEFT ON RELIABILITY</text>
+        </PanelBox>
+        <PanelBox>
+            <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+                :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
+
+            <text x="180" y="90">THE REPORT COVERS</text>
+            <text x="180" y="130">THE BENEFITS OF SRE</text>
+            <text x="180" y="170">IN MORE DETAIL.</text>
+
+            <text x="180" y="230">GOOGLE ALSO</text>
+            <text x="180" y="270">PROVIDES A WHOLE</text>
+            <text x="180" y="310">BUNCH OF SRE</text>
+            <text x="180" y="350"> RESOURCES AT</text>
+            <text x="180" y="390">
+                <a href="https://sre.google/resources/">sre.google/resources</a></text>
+        </PanelBox>
+        <PanelBox>
+            <text x="200" y="120">INTERNAL</text>
+            <text x="145" y="160">DOCUMENTATION</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">THESE INTERNAL DOC METRICS</text>
+            <text x="50" y="120">GAVE 2.5x PERFORMANCE:</text>
+
+            <text x="50" y="180">- DOCS HELP READERS</text>
+            <text x="80" y="220">ACCOMPLISH GOALS</text>
+            <text x="50" y="260">- DOCS ARE ACCURATE, UP TO</text>
+            <text x="80" y="300"> DATE, AND COMPREHENSIVE</text>
+            <text x="50" y="340">- DOCS ARE FINDABLE,</text>
+            <text x="80" y="380"> WELL-ORGANISED AND CLEAR</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">SOME PRACTICES WERE SHOWN</text>
+            <text x="50" y="120">HELP MEET THE METRICS:</text>
+
+            <text x="50" y="180">1. DOCUMENT CRITICAL USE</text>
+            <text x="80" y="220">CASES</text>
+            <text x="50" y="260">2. CREATE GUIDLINES FOR,</text>
+            <text x="80" y="300">MAINTAINING DOCS</text>
+            <text x="50" y="340">3. DEFINE DOC OWNERS</text>
+            <text x="50" y="380">4. MAKE DOCUMENTATION PART</text>
+            <text x="80" y="420">OF THE DEV PROCESS</text>
+            <text x="50" y="460">5. RECOGNISE DOCUMENT-ERS</text>
+        </PanelBox>
+        <PanelBox>
+            <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+                :limbPositions="availableLimbPositions.excited" :beanieBaseColor="speakerBeanieColor.baseColor"
+                :beanieStripeColor="speakerBeanieColor.stripeColor" />
+            <text x="180" y="90">THERE'S A LOT MORE</text>
+            <text x="180" y="130">DETAIL ON THE DOCS</text>
+            <text x="180" y="170">PRACTICES IN THE</text>
+            <text x="180" y="210">REPORT!</text>
+
+            <text x="180" y="270">PLUS, REFERENCES</text>
+            <text x="180" y="310">TO EARLIER COST-</text>
+            <text x="180" y="350">BENEFIT ANALYSIS'</text>
+            <text x="180" y="390">ON DOCUMENTATION.</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="165" y="120">SHIFT LEFT ON</text>
+            <text x="195" y="160">SECURITY</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">SHIFTING LEFT IN THESE WAYS</text>
+            <text x="50" y="120"> GAVE 1.6x PERFORMANCE:</text>
+
+            <text x="50" y="170">1. TEST FOR SECURITY IN</text>
+            <text x="80" y="210">AUTOMATED TESTS</text>
+            <text x="50" y="250">2. INTEGRATE INFOSEC IN THE</text>
+            <text x="80" y="290">WHOLE SOFTWARE LIFECYCLE</text>
+            <text x="50" y="330">3. DO SECURITY REVIEWS ON</text>
+            <text x="80" y="370">ALL MAJOR FEATURES</text>
+            <text x="50" y="410">4. MAKE TOOLS AVAILABLE WHICH</text>
+            <text x="80" y="450">ARE INFOSEC PRE-APPROVED</text>
+        </PanelBox>
+        <PanelBox>
+            <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
+                :limbPositions="availableLimbPositions.rightHandPointingNorthEast"
+                :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
+
+            <text x="180" y="100">AGAIN, THERE'S A</text>
+            <text x="180" y="140">BUNCH MORE DETAIL</text>
+            <text x="180" y="180">AND LINKS TO SOME</text>
+            <text x="180" y="220">CASE STUDIES IN </text>
+            <text x="180" y="260"><a href="https://cloud.google.com/devops/state-of-devops">THE REPORT</a></text>
+        </PanelBox>
+        <PanelBox>
+            <text x="115" y="120">TECHNICAL PRACTICES</text>
+            <text x="210" y="160">(MISC.)</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">- TECHNICAL DEVOPS PRACTICES</text>
+
+            <text x="50" y="130">DORA FOUND THAT CLOUD</text>
+            <text x="50" y="170">ADOPTION IS RISING - NICE.</text>
+
+            <text x="50" y="220">BUT MORE IMPORTANT IS IF</text>
+            <text x="50" y="260">CLOUD IS IMPLEMENTED WELL.</text>
+            <text x="50" y="300">ONLY 1/3 OF CLOUD USERS MET</text>
+            <text x="50" y="340">ALL 5 NIST CLOUD STANDARDS.</text>
+
+            <text x="50" y="400">THE ONES THAT DID MEET THE</text>
+            <text x="50" y="440">STANDARDS WERE 3x MORE</text>
+            <text x="50" y="480">LIKELY TO SMASH THE METRICS.</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="128" y="120">CULTURE AND COVID</text>
+        </PanelBox>
+        <PanelBox>
+            <text x="50" y="80">-CULTURE AND COVID</text>
+
+            <text x="50" y="130">DORA FOUND THAT CLOUD</text>
+            <text x="50" y="170">ADOPTION IS RISING - NICE.</text>
+
+            <text x="50" y="220">BUT MORE IMPORTANT IS IF</text>
+            <text x="50" y="260">CLOUD IS IMPLEMENTED WELL.</text>
+            <text x="50" y="300">ONLY 1/3 OF CLOUD USERS MET</text>
+            <text x="50" y="340">ALL 5 NIST CLOUD STANDARDS.</text>
+
+            <text x="50" y="400">THE ONES THAT DID MEET THE</text>
+            <text x="50" y="440">STANDARDS WERE 3x MORE</text>
+            <text x="50" y="480">LIKELY TO SMASH THE METRICS.</text>
         </PanelBox>
     </ComicBox>
     <NavigationBar :comicList="comicList" />
