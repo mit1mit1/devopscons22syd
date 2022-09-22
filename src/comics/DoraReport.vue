@@ -32,9 +32,9 @@ const speakerBeanieColor = {
             <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
                 :limbPositions="availableLimbPositions.rightHandWave" :beanieBaseColor="speakerBeanieColor.baseColor"
                 :beanieStripeColor="speakerBeanieColor.stripeColor" />
-            <text x="180" y="100">HELLO! RECOUNTING</text>
-            <text x="180" y="140">DAVID HERE, ON A</text>
-            <text x="180" y="180">JOURNEY OF SCIENCE!</text>
+            <text x="180" y="100">HELLO! WE'RE HERE ON</text>
+            <text x="180" y="140">A SCIENTIFIC JOURNEY</text>
+            <text x="180" y="180">COURTESY OF GOOGLE.</text>
 
             <text x="180" y="240">WE'VE HAD SOME COOL</text>
             <text x="180" y="280">STATISTICAL ANALYSIS</text>
