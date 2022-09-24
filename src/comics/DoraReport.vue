@@ -40,8 +40,9 @@ const speakerBeanieColor = {
             <text x="180" y="280">STATISTICAL ANALYSIS</text>
             <text x="180" y="320">DONE FOR US IN THE</text>
             <text x="180" y="360">2021 <a href="https://cloud.google.com/devops/state-of-devops">DORA REPORT</a>.</text>
-            <text x="180" y="410"> LET'S JUMP INTO THE</text>
-            <text x="180" y="450">FINDINGS.</text>
+
+            <text x="180" y="420"> LET'S JUMP INTO THE</text>
+            <text x="180" y="460">FINDINGS.</text>
         </PanelBox>
         <PanelBox>
             <text x="50" y="80">THE DORA PROGRAM DOES</text>
@@ -267,8 +268,8 @@ const speakerBeanieColor = {
     </ComicBox>
     <ComicBox>
         <PanelBox>
-            <text x="115" y="120">TECHNICAL PRACTICES</text>
-            <text x="210" y="160">(MISC.)</text>
+            <text class="title-text" x="65" y="120">TECHNICAL PRACTICES</text>
+            <text class="title-text" x="200" y="160">(MISC.)</text>
             <g transform="scale(1.3 1.3) translate(130, 100)">
                 <SpannerFigure />
             </g>
@@ -373,3 +374,13 @@ const speakerBeanieColor = {
         </p>
     </AfterComicBox>
 </template>
+
+<style>
+.comic-box {
+    max-width: 900px;
+}
+
+.panel .title-text {
+  font-size: 42px;
+}
+</style>
