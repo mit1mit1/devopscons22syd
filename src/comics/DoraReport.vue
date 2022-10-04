@@ -206,7 +206,7 @@ const speakerBeanieColor = {
 
             <text x="50" y="180">1. DOCUMENT CRITICAL USE</text>
             <text x="80" y="220">CASES</text>
-            <text x="50" y="260">2. CREATE GUIDLINES FOR,</text>
+            <text x="50" y="260">2. CREATE GUIDELINES FOR,</text>
             <text x="80" y="300">MAINTAINING DOCS</text>
             <text x="50" y="340">3. DEFINE DOC OWNERS</text>
             <text x="50" y="380">4. MAKE DOCUMENTATION PART</text>
