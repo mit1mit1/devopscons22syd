@@ -25,7 +25,7 @@ const speakerBeanieColor = {
 </script>
       
 <template>
-    <ComicTitle>Updates from the DORA Research Program</ComicTitle>
+    <ComicTitle>Updates from the DORA Research Program, 2021</ComicTitle>
     <NavigationBar :comicList="comicList" />
     <ComicBox>
         <PanelBox>
