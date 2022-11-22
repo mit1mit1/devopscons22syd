@@ -1,6 +1,6 @@
-# devopscons22syd
+# software-dev-resources
 
-View the comics at https://mit1mit1.github.io/devopscons22syd/index.html. This project was set up with Vite - so far, it's pretty fun.
+This repo is a collection of information and ideas I've picked up from various places, and also a comic of some of those ideas set up with Vite. You can view the comic at https://mit1mit1.github.io/software-dev-resources/index.html.
 
 ## Customize configuration
 
@@ -16,10 +16,4 @@ yarn install
 
 ```sh
 yarn dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn build
 ```
