@@ -94,8 +94,101 @@ To prevent, make sure your bucket policies are as strict as possible (have an IP
 
 You can use automated tools to identify issues like this too (Snyk, etc.).
 
-## _To be continued_
+## 6. Misconfigured AWS Cognito profile allows self-registration
 
+### Context
+
+_AWS Cognito_ is a service that handles customer identity and access management - i.e., you can use it to handle user authentication.
+
+### Example
+
+Cognito is used for a site that isn't meant for public access (e.g. internal company news site), but a flag is left on that allows people to create their own users.
+
+### Consequence
+
+Any secrets, confidential data, etc. visible on the website will be accessible to an attacker. In particular, note that even if a UI isn't provided to handle user creation, Cognito comes with an API which an attacker could use to create a user.
+
+### Cause / Solution
+
+If you're running a site that only some people should be able to access, configure Cognito to prevent self-registration.
+
+## 7. Misconfigured AWS Cognito Attributes
+
+### Example
+
+A custom user attribute "custom:role" is set up in AWS Cognito and used to determine whether a user has access rights or not - however, the developers forget to set it as a read only attribute, so the user can set their own role through the AWS console.
+
+### Consequence
+
+Depending on what the attribute is that users get write access to, they might be able to access restricted sections of the site, perform restricted actions on the site, etc.
+
+### Cause / Solution
+
+If you're defining custom attributes (or using standard attributes to determine authorization in any way) you must make sure they are appropriately marked as read only.
+
+## 7. S3 Directory Traversal
+
+### Example
+
+A lambda is set up which takes a user file, uploads it to S3, then displays it back to the user. To allow the user to see the file once it is uploaded, a token is returned to the user which gives them access to the file location on the S3. However, an attacker can pass a file with the name "../../", and the token they are returned will give them access to the entire bucket.
+
+### Consequence
+
+An attacker can gain access to anything on an S3 bucket.
+
+### Cause / Solution
+
+If you want to allow a user to see a file on an S3 bucket, make sure the file location is exactly where you want it to be. If you are interpreting user input to decide the file location, sanitize the user input appropriately first.
+
+## 8. Weak S3 POST Upload Policy
+
+### Example
+
+An S3 bucket is used to store user image uploads, and also to store internal drivers and SDKs. The upload is done using AWS's browser-based file upload, and the base directory to upload to is not specified. 
+
+### Consequence
+
+An attacker can upload files to the S3 bucket to replace the drivers and SDKs, compromising behaviour.
+
+### Cause / Solution
+
+When allowing user upload to an S3 via the browser, always control the destination uploaded to - either by specifying the base directory, or by setting the file name it is saved in S3 as yourself.
+
+## 9. S3 Bucket Authenticated Users 'WRITE' Access
+
+### Example
+
+An S3 bucket with static files used to load a page is meant to be public readable to everyone. However, the permissions have a wildcard Principle set ("*"), and have included this for both read _and_ write access.
+
+### Consequence
+
+An attacker can upload malicious javascript which will be executed when users visit your site.
+
+### Cause / Solution
+
+Again, be very careful with wildcard permissions on S3 buckets. If you don't need write access, turn it off. If you must have write access, restrict it as much as possible.
+
+Again, tools exist to help with this - e.g. [Cloudsploit](www.cloudsploit.com).
+
+## 10. Dangerous Dependencies
+
+### Example
+
+You run a site with NPM dependencies which have gone stale (known vulnerabilities are discovered in them).
+
+An attacker may get access to your source code (e.g. through a directory traversal vulnerability on S3), and run `npm audit` on your source code to find vulnerabilities - alternatively they might just test a whole bunch of potential vulnerabilities.
+
+### Consequence
+
+Depending on the vulnerability in the dependency, the attacker might be able to do just about anything.
+
+### Cause / Solution
+
+You can't rely on obscurity to protect yourself against an attacker - automated attack tools exist and can attempt a range of attacks against a range of IP addresses very rapidly.
+
+Hence, you must make sure you aren't vulnerable to common attacks, which are often due to known vulnerable dependencies.
+
+Hence, you need to keep up with your `dependabot` alerts, etc.
 
 ## Bibliography
 
