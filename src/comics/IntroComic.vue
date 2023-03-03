@@ -89,12 +89,17 @@ const { comicList } = toRefs(props);
   <AfterComicBox>
     <p>Hey hey, welcome to the first post-comic text! I'll stick any necessary explanations or useful links here. I'll
       also leave a link to a discussion thread. In this case:</p>
-    <p>See more about DevOpsCon at <a href="https://devops.talksplus.com/2022_Sydney/index.ht ml">their website</a></p>
     <p>
       Join the discussion at <a
         href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
     </p>
+    <p>See more about DevOpsCon at <a href="https://devops.talksplus.com/2022_Sydney/index.ht ml">their website</a></p>
     <p>And a huge thank you to my company <a href="https://www.linkedin.com/company/iress/">Iress</a> for taking a bunch
       of us along to the conference - hugely appreciated.</p>
+
+    <p>
+      P.S.: If you want to more of my (more humorous) work, check it out at
+      <a target="_blank" rel="noreferrer" href="https://mit1mit1.github.io/index/">mit1mit1.github.io/index/</a> ;)
+    </p>
   </AfterComicBox>
 </template>

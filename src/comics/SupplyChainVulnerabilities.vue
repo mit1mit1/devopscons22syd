@@ -91,9 +91,8 @@ const speakerBeanieColor = {
       </g>
     </PanelBox>
     <PanelBox>
-      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-        :limbPositions="availableLimbPositions.shrug" :beanieBaseColor="speakerBeanieColor.baseColor"
-        :beanieStripeColor="speakerBeanieColor.stripeColor" />
+      <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360" :limbPositions="availableLimbPositions.shrug"
+        :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
       <text x="140" y="100">BUT ISN'T OPEN SOURCE</text>
       <text x="170" y="140">TRUSTWORTHY? WELL,</text>
       <text x="170" y="180">WE TRUST OPEN</text>
@@ -216,6 +215,9 @@ const speakerBeanieColor = {
   <AfterComicBox>
     <p>Thanks to <a href="https://www.linkedin.com/in/michael-fowler/">Michael Fowler</a> of Checkmarx for a cracker
       talk at <a href="https://devops.talksplus.com/sydney/devops.html">DevOps Talks Conference 2022</a></p>
-    <p>Join the discussion at <a href="https://oneiress.slack.com/archives/C040VRMT64U/p1662099674315709">Slack</a>.</p>
+    <p>
+      Join the discussion at <a
+        href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
+    </p>
   </AfterComicBox>
 </template>

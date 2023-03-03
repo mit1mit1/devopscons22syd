@@ -6,7 +6,7 @@ Goal: get things done.
 
 Prioritization is required to achieve that.
 
-Consider the effort/outcome ratio to achieve that.
+Consider the effort/outcome ratio to achieve _that_.
 
 ## Activity types
 
@@ -14,11 +14,7 @@ Effort driven activities such as digging a hole can be completed faster with mor
 
 Fixed duration activities can't be completed faster no matter how hard you try or how many people help - for example, drying paint. Or maybe it is a one man job - two people can't really stir flour for the same cake.
 
-## Productivity vs efficiency
-
-Being productive means we do more things: producing 1000 units vs. 1100 units.
-
-Efficiency is about accuracy and precision, reducing wastage.
+Considering which type of activity you're dealing with can help you plan your schedule and/or collaboration.
 
 ## Assessment of a task
 
@@ -28,7 +24,7 @@ Ask:
 - How much personal value does the task offer to you?
 - Can you delegate the task?
 
-## Prioritization
+## Self-Discipline
 
 Time management is self-discipline. It is your time, you can do what you want. Things can distract and you may need to remove them, ignore them, or reschedule them if they are not important at the time.
 
@@ -39,6 +35,8 @@ Example of distractions:
 - Social interactions;
 
 Self discipline is essential.
+
+## Prioritization
 
 To prioritize:
 
@@ -63,17 +61,13 @@ The Eisenhower decision matrix is one way of deciding what to do when.
 
 ## Write tomorrow's list today
 
-Know what to do.
+Writing a list can help you know what to do.
 
-Don't confuse quality with quantity.
+Don't confuse quality with quantity - have 3 to 5 items in a day.
 
-Have 3 to 5 items in a day.
+Start with just the number one item so you can focus.
 
-Start with just the number one item.
-
-## Use more than one list
-
-Might be helpful to have a separate list for daily items, weekly items, monthly items. Update all of them at the end of the day.
+Use more than one list - it might be helpful to keep separate lists for daily items, weekly items and monthly items. Update all of them at the end of the day.
 
 ## Winning the to-do list
 
@@ -83,6 +77,12 @@ How do I really become most effective?
 - Highlight what's been done.
 - Break down the big stuff. 
 
+
+Try the 1-3-5 technique
+
+- One big thing (before lunch)
+- Three medium things (later)
+- Five little things (by the end of the day)
 
 ## Be unavailable
 
@@ -96,28 +96,14 @@ How do I really become most effective?
 - Break work into 25 minutes, take a short break and go again
 - This timeboxes your day
 
-Pomodoro steps:
-- Choose the task;
-- Do the work
-- End the work after 25 minutes
+Pomodoro steps in one iteration:
+1. Choose the task;
+2. Do the work
+3. End the work after 25 minutes
 - After each of the first three iterations, take a longer break
-
-## 1-3-5 technique
-
-- One big thing (before lunch)
-- Three medium things (later)
-- Five little things (by the end of the day)
-
-"If it's your job to eat a frog, it's best to do it first in the morning. And if it's your job to eat two frogs, it's best to eat the big one first" - Albert Einstein
 
 ## Brook's Law
 
 Sometimes adding more people to a late software project makes the project later.
 
 There are exceptions. If the people you add are qualified, or if you add them early, you have a better chance of success.
-
-## Methods to create duration estimates
-
-- Rough order of magnitude
-- Analogous estimating
-- Parametric estimating

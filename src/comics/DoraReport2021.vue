@@ -31,8 +31,7 @@ const speakerBeanieColor = {
         <ComicBox>
             <PanelBox>
                 <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-                    :limbPositions="availableLimbPositions.rightHandWave"
-                    :beanieBaseColor="speakerBeanieColor.baseColor"
+                    :limbPositions="availableLimbPositions.rightHandWave" :beanieBaseColor="speakerBeanieColor.baseColor"
                     :beanieStripeColor="speakerBeanieColor.stripeColor" />
                 <text x="180" y="100">HELLO! WE'RE HERE ON</text>
                 <text x="180" y="140">A SCIENTIFIC JOURNEY</text>
@@ -75,8 +74,7 @@ const speakerBeanieColor = {
             </PanelBox>
             <PanelBox>
                 <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-                    :beanieBaseColor="speakerBeanieColor.baseColor"
-                    :beanieStripeColor="speakerBeanieColor.stripeColor" />
+                    :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
                 <text x="180" y="90">WE ALL WANT FASTER</text>
                 <text x="180" y="130">FEATURES AND FIXES,</text>
                 <text x="180" y="170">FEWER BUGS AND</text>
@@ -169,8 +167,7 @@ const speakerBeanieColor = {
             </PanelBox>
             <PanelBox>
                 <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-                    :beanieBaseColor="speakerBeanieColor.baseColor"
-                    :beanieStripeColor="speakerBeanieColor.stripeColor" />
+                    :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
 
                 <text x="180" y="90">THE REPORT COVERS</text>
                 <text x="180" y="130">THE BENEFITS OF SRE</text>
@@ -262,8 +259,7 @@ const speakerBeanieColor = {
             <PanelBox>
                 <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
                     :limbPositions="availableLimbPositions.rightHandPointingNorthEast"
-                    :beanieBaseColor="speakerBeanieColor.baseColor"
-                    :beanieStripeColor="speakerBeanieColor.stripeColor" />
+                    :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
 
                 <text x="180" y="100">AGAIN, THERE'S A</text>
                 <text x="180" y="140">BUNCH MORE DETAIL</text>
@@ -284,8 +280,7 @@ const speakerBeanieColor = {
         <ComicBox>
             <PanelBox>
                 <BeanieMan :minimumX="60" :minimumY="110" :lengthX="90" :lengthY="360"
-                    :beanieBaseColor="speakerBeanieColor.baseColor"
-                    :beanieStripeColor="speakerBeanieColor.stripeColor" />
+                    :beanieBaseColor="speakerBeanieColor.baseColor" :beanieStripeColor="speakerBeanieColor.stripeColor" />
 
                 <text x="180" y="100">THE REPORT LISTS A</text>
                 <text x="180" y="140">WHOLE BUNCH MORE</text>
@@ -376,9 +371,11 @@ const speakerBeanieColor = {
     <AfterComicBox>
         <p>Thanks to <a href="https://twitter.com/davidstanke">Dave Stanke</a> of Google Cloud for an awesome research
             deep
-            dive at <a href="https://devops.talksplus.com/sydney/devops.html">DevOps Talks Conference 2022</a></p>
+            dive at <a href="https://devops.talksplus.com/sydney/devops.html">DevOps Talks Conference 2022</a>.</p>
         <p>Read the report for yourself <a href="https://cloud.google.com/devops/state-of-devops">here</a>.</p>
-        <p>Join the discussion at <a href="https://oneiress.slack.com/archives/C040VRMT64U/p1662099674315709">Slack</a>.
+        <p>
+            Join the discussion at <a
+                href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
         </p>
     </AfterComicBox>
 </template>
