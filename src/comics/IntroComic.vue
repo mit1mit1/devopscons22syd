@@ -99,7 +99,7 @@ const { comicList } = toRefs(props);
 
     <p>
       P.S.: If you want to more of my (more humorous) work, check it out at
-      <a target="_blank" rel="noreferrer" href="https://mit1mit1.github.io/index/">mit1mit1.github.io/index/</a> ;)
+      <a target="_blank" rel="noreferrer" href="https://mit1mit1.github.io/">mit1mit1.github.io/</a> ;)
     </p>
   </AfterComicBox>
 </template>
