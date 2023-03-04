@@ -375,7 +375,7 @@ const speakerBeanieColor = {
         <p>Read the report for yourself <a href="https://cloud.google.com/devops/state-of-devops">here</a>.</p>
         <p>
             Join the discussion at <a
-                href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
+                href="https://www.reddit.com/r/mitt_comics/">Reddit</a>.
         </p>
     </AfterComicBox>
 </template>

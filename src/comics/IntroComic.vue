@@ -91,7 +91,7 @@ const { comicList } = toRefs(props);
       also leave a link to a discussion thread. In this case:</p>
     <p>
       Join the discussion at <a
-        href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
+        href="https://www.reddit.com/r/mitt_comics/">Reddit</a>.
     </p>
     <p>See more about DevOpsCon at <a href="https://devops.talksplus.com/2022_Sydney/index.ht ml">their website</a></p>
     <p>And a huge thank you to my company <a href="https://www.linkedin.com/company/iress/">Iress</a> for taking a bunch

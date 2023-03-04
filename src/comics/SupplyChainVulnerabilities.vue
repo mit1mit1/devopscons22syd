@@ -111,7 +111,7 @@ const speakerBeanieColor = {
       <text x="120" y="280">MONTHLY RELEASES ARE</text>
       <text x="120" y="320">INCREASING!</text>
       <text x="80" y="360">2. BY THE SAME TOKEN</text>
-      <text x="120" y="400">ISSUE'S OFTEN GO</text>
+      <text x="120" y="400">ISSUES OFTEN GO</text>
       <text x="120" y="440">UNNOTICED.</text>
     </PanelBox>
     <PanelBox>
@@ -155,7 +155,7 @@ const speakerBeanieColor = {
       <text x="170" y="140">DEVELOPERS USE 2FA.</text>
       <text x="170" y="180">YOU CAN'T MAKE SOME</text>
       <text x="170" y="220">HOBBY PROGRAMMER</text>
-      <text x="170" y="260">WHO'S CODE RUNS ON</text>
+      <text x="170" y="260">WHOSE CODE RUNS ON</text>
       <text x="170" y="300">EVERY REACT INSTANCE</text>
       <text x="170" y="340">USE IT.</text>
     </PanelBox>
@@ -217,7 +217,7 @@ const speakerBeanieColor = {
       talk at <a href="https://devops.talksplus.com/sydney/devops.html">DevOps Talks Conference 2022</a></p>
     <p>
       Join the discussion at <a
-        href="https://www.reddit.com/r/mitt_comics/comments/wxv4ah/comic_1_many_meetings/">Reddit</a>.
+        href="https://www.reddit.com/r/mitt_comics/">Reddit</a>.
     </p>
   </AfterComicBox>
 </template>
