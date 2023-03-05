@@ -1,4 +1,4 @@
-# Cloud Concepts - Draft
+# Cloud Concepts
 
 ## What is the AWS Cloud?
 
@@ -23,7 +23,12 @@ A client sends a request, and if the permissions are met, the server (e.g. an EC
 
 A network is how the client talks to the server. The client and server will each have an IP address - you send your request with an IP address you would like to send it to, and then the server sends the response to your IP address.
 
-What is the server made of? CPU which does the computations; RAM, which holds data for computation; Storage, which holds long term data; and Network related stuff, routers and so forth.
+What is the server made of?
+
+- CPU which does the computations;
+- RAM, which holds data for computation;
+- Storage, which holds long term data;
+- Network related stuff, routers and so forth.
 
 Terminology:
 
@@ -35,7 +40,9 @@ Traditional way to build infrastructure: you put some servers in a garage, host 
 
 _Side note, AWS Principle 1: You only pay for what you use. If the server isn't returning data, you don't pay for it._
 
-Cloud computing is the on demand delivery of resources over the internet with pay as you go pricing. You should always be able to assume that AWS will be able to provide the storage you need, and you should never need to plan for this in advance.
+Cloud computing is: the on demand delivery of resources over the internet with pay as you go pricing.
+
+You should always be able to assume that AWS will be able to provide the storage you need, and you should never need to plan for this in advance.
 
 Cloud computing externalises all the work involved in hosting a server. It gives huge simplifications at scale.
 
@@ -59,7 +66,7 @@ _Side note, AWS Principle 2: Undifferentiated heavy lifting. AWS tries to cover 
 3. Multi-tenancy and resource pooling;
     - Multiple customers can share infrastructure and applications and still have security - this provides:
 4. Rapid elasticity and scalability.
-  - Automatic and quick to acquire and dispose of resources. 
+    - Automatic and quick to acquire and dispose of resources. 
 5. Measured service - pay for what you use.
 
 ### Advantages of cloud computing
@@ -92,11 +99,7 @@ _Side note, AWS Principle 2: Undifferentiated heavy lifting. AWS tries to cover 
 2. Storage - you pay for data stored in the cloud.
 3. Data transfer out of cloud - data going into the cloud is free, data out is paid for.
 
-### What is EC2?
-
-
-
-## What is the AWS Cloud value proposition?
+### What is the AWS Cloud value proposition?
 
 Benefits of cloud:
 
