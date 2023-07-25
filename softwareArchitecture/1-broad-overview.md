@@ -46,6 +46,13 @@ This isn't something I've seen anyone explicitly distinguish, but it is a distin
 
 "Architecture Patterns" are copy-paste-able, well, patterns you can use. E.g. microservice architecture, BFF pattern, monolithic architecture.
 
+### Theory vs. Practice
+
+Of course, the expected architecture can be defined in the planning level, and not implemented exactly as planned once we get to actual coding. This can be referred to as "erosion" (see Wikipedia, referencing some academic papers I couldn't access).
+
+A simple example - we plan a `Backend <-> BFF <-> UI` architecture to keep the UI backend agnostic. But, we start making Backend calls directly from the UI as well as BFF calls.
+
+Just a possibility to keep in mind.
 
 ### Next Steps
 
