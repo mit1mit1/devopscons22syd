@@ -79,7 +79,7 @@ Because microservices put a lot of architectural responsibility and power on ind
 
 If you google "examples of microservices", you mostly get a bunch of Medium blog posts about how Netflix or Amazon accelerate and scale by splitting into small teams - which is all well and good, but isn't very fleshed out.
 
-So for more detail let's have a quick look at a couple of examples from our own projects: [real microservice examples](../personalNotes/real-microservices.md)
+So for more detail let's have a quick look at a couple of examples from our own projects: [real microservice examples](../personalNotes/real-microservices.md) (sorry, if you're looking at this on GitHub you won't see these examples, they're bespoke to my current company so I won't be sharing them).
 
 ## References
 
