@@ -2,7 +2,7 @@
 
 ## Definitions
 
-You may be thinking, "Microservice", "Microfrontend" - potato potato? And you'd be right.
+You may be thinking, "Microservice", "Microfrontend" - potato potato? And you'd be right (sort-of).
 
 The concept of latter emerged in the wake of former. Microservices were gaining popularity, companies were splitting their backends into team-managed bite-size chunks - but often the UI got left as a huge monolith.
 
@@ -54,18 +54,18 @@ Mounting a bunch of CSS written by different teams to the same page could cause 
 - Use a class naming convention, e.g. https://getbem.com/;
 - Use SASS to namespace classes;
 - Use CSS-in-JS to apply styles through uniquely generated classes;
-- Use web components and a shadow DOM;
+- Use web components and a shadow DOM to isolate the CSS entirely;
 
 ### Keeping it DRY
 
 There's a high likelihood your independent microfrontends are still going to want to do similar things. You don't want to repeat effort, and you do want to make sure the end user gets a consistent experience.
 
-The main way to deal with this is to create a shared UI component library. Recommendations:
+The main way to deal with this is to create a shared UI component library. Recommendations when doing so:
 - Keep it dumb and generic;
 - Make sure there is a clear process for ownership so it doesn't get neglected or turn into a mess - make sure there is an easy contribution process;
 - Make it isn't developed in isolation for how it is used, so it is actually useful.
 
-### Interacting between frontends
+### Interactions between frontends
 
 You don't want to couple your frontends together any more than you can avoid. Some nice ways to let them interact when necessary include:
 
@@ -83,10 +83,10 @@ Ideally each team owns their own backend service. If a BFF helps keep these inde
 
 ## References
 
-- https://martinfowler.com/articles/micro-frontends.html
-- https://micro-frontends.org/
-- https://github.com/ChristianUlbrich/awesome-microfrontends
-- https://micro-frontends.zeef.com/elisabeth.engel?ref=elisabeth.engel&share=ee53d51a914b4951ae5c94ece97642fc
-- https://www.angulararchitects.io/aktuelles/a-software-architects-approach-towards/
-- https://www.sigs-datacom.de/uploads/tx_dmjournals/attermeyer_OTS_Microservices_Docker_16.pdf?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Fmicro-frontends.zeef.com%2Felisabeth.engel (Deutsch)
+- [Martin Fowler on Microfrontends](https://martinfowler.com/articles/micro-frontends.html)
+- [microfrontends.org](https://micro-frontends.org/)
+- [Awesome Microfrontends by Christian Ulbrich](https://github.com/ChristianUlbrich/awesome-microfrontends)
+- [Elisabeth Engel on Microfrontends](https://micro-frontends.zeef.com/elisabeth.engel?ref=elisabeth.engel&share=ee53d51a914b4951ae5c94ece97642fc)
+- [A software architect's approach towards microfrontends](https://www.angulararchitects.io/aktuelles/a-software-architects-approach-towards/)
+- [OTS Microservices Docker Journal](https://www.sigs-datacom.de/uploads/tx_dmjournals/attermeyer_OTS_Microservices_Docker_16.pdf?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Fmicro-frontends.zeef.com%2Felisabeth.engel) (Deutsch)
 
