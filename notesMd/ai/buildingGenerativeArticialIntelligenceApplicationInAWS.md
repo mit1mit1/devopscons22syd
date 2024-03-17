@@ -1,4 +1,4 @@
-# Building Generative AI on AWS
+# Building Generative AI Applications in AWS
 
 _Heads up: in this session, there'll be a focus on Agents and Retrieval Augmented Generation (RAG)_
 
