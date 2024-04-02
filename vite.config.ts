@@ -12,5 +12,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  assetsInclude: ['**/*.md'],
   base: './',
 })
