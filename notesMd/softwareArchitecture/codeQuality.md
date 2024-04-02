@@ -25,6 +25,12 @@ Or, how to make your code stink less.
   - Compose your helper functions from other helper functions to keep them small and single purpose;
 - Give a descriptive name;
 
+**Tools:**
+
+Most IDE's can start the function extraction for you, see e.g. [VSCode/refactoring](https://code.visualstudio.com/docs/editor/refactoring). Of course, you'll still need to tidy it up and write tests.
+
+AI assistants, e.g. CoPilot, can probably help you tidy up the function once you extract it.
+
 ## Resources
 
 ### [Refactoring Guru](https://refactoring.guru/)

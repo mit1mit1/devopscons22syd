@@ -56,6 +56,8 @@ RAG works by:
 
 3. Ask the LLM to consume and summarise those paragraphs and use it to answer the user's query.
 
+For a nice introduction to RAG, check out [research.ibm.com/blog/RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG).
+
 ### Retrieval types
 
 - Rules bases, e.g. perform a key word search in unstructured data, e.g. a document;
