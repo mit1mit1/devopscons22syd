@@ -6,6 +6,7 @@ import ComicTitle from '../vue-comic-components/components/ComicTitle.vue';
 import NavigationBar from '../vue-comic-components/components/NavigationBar.vue';
 import { ref } from 'vue'
 const SoftwareIntroMd = ref('');
+
 import("../../notesMd/softwareArchitecture/broadOverview.md").then(res => {
     fetch(res.default)
         .then(response => response.text())
