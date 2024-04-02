@@ -1,5 +1,8 @@
 {
-  "name": "devopscon22syd",
+  "name": "software-dev-resources",
+  "engines" : { 
+    "node" : ">= 18"
+  },
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
