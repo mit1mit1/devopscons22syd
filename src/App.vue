@@ -35,6 +35,9 @@ const comicNumber = getComicNumber(comicList);
 </template>
 
 <style>
+@import "./themes/global.css";
+@import "./themes/light.css";
+
 h1 {
   text-align: center;
   font-family: monospace;
