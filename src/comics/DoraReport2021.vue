@@ -351,7 +351,7 @@ const speakerBeanieColor = {
                 <text x="50" y="370">ARTICLE ON WHAT THIS LOOKS</text>
                 <text x="50" y="410">LIKE, AND HOW TO BUILD IT, AT</text>
                 <text x="50" y="450"><a
-                        href="https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture">cloud.google.com/.../westrum</a></text>
+                        href="https://dora.dev/devops-capabilities/cultural/generative-organizational-culture/">cloud.google.com/.../westrum</a></text>
             </PanelBox>
             <PanelBox>
                 <text x="50" y="100">HOWEVER, IN A FINAL SUMMARY:</text>
