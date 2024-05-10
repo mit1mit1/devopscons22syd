@@ -1,17 +1,21 @@
 {
-  "name": "devopscon22syd",
+  "name": "software-dev-resources",
+  "engines": {
+    "node": ">= 18"
+  },
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
-    "preview": "vite preview --port 4173",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "marked": "^12.0.1",
     "vue": "^3.2.38"
   },
   "devDependencies": {
+    "@types/marked": "^6.0.0",
     "@types/node": "^16.11.56",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
