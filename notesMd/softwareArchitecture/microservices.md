@@ -81,6 +81,10 @@ If you google "examples of microservices", you mostly get a bunch of Medium blog
 
 So for more detail let's have a quick look at a couple of examples from our own projects: [real microservice examples](../personalNotes/real-microservices.md) (sorry, if you're looking at this on GitHub you won't see these examples, they're bespoke to my current company so I won't be sharing them).
 
+## Disdain
+
+https://news.ycombinator.com/item?id=36904664
+
 ## References
 
 - https://martinfowler.com/articles/microservices.html
