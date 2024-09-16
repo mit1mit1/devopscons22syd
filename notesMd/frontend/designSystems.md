@@ -1,6 +1,9 @@
 # Design systems
 
-https://www.reddit.com/r/ExperiencedDevs/comments/19egb3t/have_you_worked_with_shared_ui_components/
+## [r/ExperiencedDevs on UI Component Libraries](https://www.reddit.com/r/ExperiencedDevs/comments/19egb3t/have_you_worked_with_shared_ui_components/)
+
+Custom company-wide component libraries are controversial, on reddit at least.
+
 
 https://martinfowler.com/articles/micro-frontends.html#SharedComponentLibraries
 
