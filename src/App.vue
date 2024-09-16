@@ -5,6 +5,8 @@ import SoftwareArchitectureOverview from './comics/SoftwareArchitectureOverview.
 import SoftwareArchitectureMicroservices from './comics/SoftwareArchitectureMicroservices.vue';
 import SoftwareArchitectureMicrofrontends from './comics/SoftwareArchitectureMicrofrontends.vue';
 import { getComicNumber } from './vue-comic-components/utils/comicNumber';
+import ComicIndex from './vue-comic-components/components/ComicIndex.vue';
+import { shouldShowIndex } from './vue-comic-components/utils/comicIndex';
 import DoraReport2021 from './comics/DoraReport2021.vue';
 const comicList = [
   'intro',
@@ -15,22 +17,29 @@ const comicList = [
   'software-architecture-microfrontends',
 ]
 const comicNumber = getComicNumber(comicList);
+const showIndex = shouldShowIndex();
+console.log(showIndex);
 </script>
 
 <template>
   <main>
     <h1>Software Dev Resources</h1>
-    <IntroComic v-if="comicNumber == comicList.indexOf('intro')" :comicList="comicList" />
-    <SupplyChainVulnerabilities :comicList="comicList"
-      v-else-if="comicNumber == comicList.indexOf('supply-chain-vulnerabilities')" />
-    <DoraReport2021 :comicList="comicList" v-else-if="comicNumber == comicList.indexOf('dora-report-2021')" />
-    <SoftwareArchitectureOverview :comicList="comicList"
-      v-else-if="comicNumber == comicList.indexOf('software-architecture-overview')" />
-    <SoftwareArchitectureMicroservices :comicList="comicList"
-      v-else-if="comicNumber == comicList.indexOf('software-architecture-microservices')" />
-    <SoftwareArchitectureMicrofrontends :comicList="comicList"
-      v-else-if="comicNumber == comicList.indexOf('software-architecture-microfrontends')" />
-    <div v-else>Sorry, no comic at this address.</div>
+    <template v-if="showIndex">
+      <ComicIndex :comicList="comicList" />
+    </template>
+    <template v-else>
+      <IntroComic v-if="comicNumber == comicList.indexOf('intro')" :comicList="comicList" />
+      <SupplyChainVulnerabilities :comicList="comicList"
+        v-else-if="comicNumber == comicList.indexOf('supply-chain-vulnerabilities')" />
+      <DoraReport2021 :comicList="comicList" v-else-if="comicNumber == comicList.indexOf('dora-report-2021')" />
+      <SoftwareArchitectureOverview :comicList="comicList"
+        v-else-if="comicNumber == comicList.indexOf('software-architecture-overview')" />
+      <SoftwareArchitectureMicroservices :comicList="comicList"
+        v-else-if="comicNumber == comicList.indexOf('software-architecture-microservices')" />
+      <SoftwareArchitectureMicrofrontends :comicList="comicList"
+        v-else-if="comicNumber == comicList.indexOf('software-architecture-microfrontends')" />
+      <div v-else>Sorry, no comic at this address.</div>
+    </template>
   </main>
 </template>
 
